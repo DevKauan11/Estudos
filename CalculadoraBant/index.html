@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANT Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora BANT</h1>
+        <div class="calculator">
+            <form id="bantForm">
+                <div class="input-group">
+                    <label for="budget">Budget (Orçamento)</label>
+                    <input type="number" id="budget" name="budget" required>
+                </div>
+                <div class="input-group">
+                    <label for="authority">Authority (Autoridade)</label>
+                    <select id="authority" name="authority" required>
+                        <option value="0">No Authority</option>
+                        <option value="1">Low Authority</option>
+                        <option value="2">Medium Authority</option>
+                        <option value="3">High Authority</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="need">Need (Necessidade)</label>
+                    <select id="need" name="need" required>
+                        <option value="0">No Need</option>
+                        <option value="1">Low Need</option>
+                        <option value="2">Medium Need</option>
+                        <option value="3">High Need</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="timing">Timing (Tempo)</label>
+                    <select id="timing" name="timing" required>
+                        <option value="0">No Urgency</option>
+                        <option value="1">Low Urgency</option>
+                        <option value="2">Medium Urgency</option>
+                        <option value="3">High Urgency</option>
+                    </select>
+                </div>
+                <button type="button" onclick="calculateBANT()">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
