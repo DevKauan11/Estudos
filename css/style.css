@@ -3,7 +3,12 @@ body{
 }
 
 h1 {
-    color: #15bd42;
+    color: #ffffff;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: black;
 }
 
 p{
@@ -15,5 +20,6 @@ background-color: rgb(117, 121, 117);
 background-image:url(img/pexels-artempodrez-7232830.jpg);
 background-size: cover;
 background-repeat: no-repeat;
+background-position: center;
 
 }

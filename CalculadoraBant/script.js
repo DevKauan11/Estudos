@@ -27,13 +27,13 @@ function calculateBANT() {
 
     let resultMessage = '';
     if (score >= 10) {
-        resultMessage = 'Lead Qualificado: Muito Alto';
+        resultMessage = 'Lead Qualificado: vai trabalhar CLT';
     } else if (score >= 7) {
-        resultMessage = 'Lead Qualificado: Alto';
+        resultMessage = 'Lead Qualificado: Vai trabalhar CLT';
     } else if (score >= 4) {
-        resultMessage = 'Lead Qualificado: Médio';
+        resultMessage = 'Vai trabalhar CLT';
     } else {
-        resultMessage = 'Lead Qualificado: Baixo';
+        resultMessage = 'Vai trabalhar CLT';
     }
 
     const resultElement = document.getElementById('result');
